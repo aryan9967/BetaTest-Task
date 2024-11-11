@@ -14,6 +14,10 @@ dotenv.config()
 
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET, process.env.REDIRECT_URI);
 
+app.get("/", (req, res)=>{
+    res.send(<h1>Hello world</h1>)
+})
+
 app.get('/auth/google', (req, res) => {
     const url = client.generateAuthUrl({
         access_type: 'offline',

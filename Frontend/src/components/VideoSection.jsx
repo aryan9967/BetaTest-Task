@@ -24,12 +24,13 @@ export default function VideoSection() {
           ref={videoRef}
           src={activeVideo}
           className="w-full h-full object-cover"
-          onClick={handlePlayPause}
+          // onClick={handlePlayPause}
+          controls
         //   onEnded={handleVideoEnd}
         />
-        {!isPlaying && (
+        {/* {!isPlaying && (
           <button 
-            onClick={handlePlayPause}
+            // onClick={handlePlayPause}
             className="play_btn rounded-full w-12 h-12 bg-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center opacity-95 hover:opacity-100 transition-all duration-300 hover:scale-110"
           >
             <svg
@@ -42,7 +43,7 @@ export default function VideoSection() {
               <path d="M320-200v-560l440 280-440 280Z" />
             </svg>
           </button>
-        )}
+        )} */}
       </div>
       <div className="videocarousel mt-5 flex justify-center">
         <VideoCarousel setActiveVideo={setActiveVideo} />

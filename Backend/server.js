@@ -30,7 +30,7 @@ app.get('/auth/google/callback', async (req, res) => {
     const code = req.query.code;
     const { tokens } = await client.getToken(code);
     client.setCredentials(tokens);
-    res.redirect(`https://dashboard-wheat-nine-20.vercel.app/dashboard?token=${tokens.access_token}`);
+    res.redirect(`https://beta-test-task.vercel.app/dashboard?token=${tokens.access_token}`);
 });
 
 app.get('/events', async (req, res) => {

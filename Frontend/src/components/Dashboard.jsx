@@ -50,7 +50,7 @@ function Dashboard() {
 
   const fetchCalendarEvents = async (accessToken) => {
     try {
-      const response = await axios.get("http://localhost:3000/events", {
+      const response = await axios.get(`${import.meta.env.VITE_ENDPOINT}/events`, {
         headers: { Authorization: `Bearer ${accessToken}` },
       });
       setEvents(response.data);

@@ -3,7 +3,7 @@
 const GoogleCalendar = () => {
 
     const handleGoogleSignIn = () => {
-        window.location.href = 'https://beta-test-task.vercel.app/auth/google';
+        window.location.href =  `${import.meta.env.VITE_ENDPOINT}/auth/google`;
     };
 
     

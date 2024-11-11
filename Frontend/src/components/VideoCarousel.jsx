@@ -21,12 +21,12 @@ export default function VideoCarousel({setActiveVideo}) {
     },
     {
       id: 3,
-      url: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+      url: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
       title: "Video 3",
     },
     {
       id: 4,
-      url: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+      url: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
       title: "Video 4",
     },
     {
